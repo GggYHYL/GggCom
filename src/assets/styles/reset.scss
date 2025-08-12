@@ -16,3 +16,19 @@ a {
     color: $primary-color;          /* 悬停颜色 */
   }
 }
+
+/* 在全局CSS或组件样式中添加 */
+.markdown-body table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.markdown-body table tr:nth-child(2) {
+  border-bottom: 1px solid #ddd;
+}
