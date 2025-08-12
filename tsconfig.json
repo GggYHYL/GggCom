@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "declaration": true,               // 生成 .d.ts 文件
+    "declarationDir": "dist/types",    // 类型文件输出目录
+    "emitDeclarationOnly": true,       // 仅生成类型文件
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@docs/*": ["docs/*"],
+      "@packages/*": ["packages/*"] 
+    },
+    "types": ["vite/client"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "examples/**/*.vue",
+    "docs/**/*.md"
+  ],
+  "exclude": ["node_modules"]
+}

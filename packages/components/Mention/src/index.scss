@@ -1,0 +1,47 @@
+.mention{
+    position: relative;
+    .input{
+        border: 1px solid $border-color;
+        padding: 8px 16px;
+        box-sizing: border-box;
+        border-radius: $border-radius;
+        &[contenteditable=false]{
+            background-color: $disabled-color;
+            color: $disabled-text-color;
+        }
+        &:focus-visible{
+            outline: none;
+        }
+        &:focus{
+            border-color: $primary-color;
+        }
+        &:empty::before,
+        &:has(> br:only-child)::before {
+            content: attr(placeholder);
+            pointer-events: none; 
+        }
+        :deep(span[contenteditable=false]){
+            display: inline-block;
+            background-color: $success-color;
+            color: #fff;
+            padding: 0px 4px;
+            border-radius: 4px;
+        }
+    }
+    .options{
+        width: 180px;
+        min-height: 200px;
+        max-height: 300px;
+        overflow: auto;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 30px;
+        background-color: #fff;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        padding: 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+}
