@@ -10,12 +10,12 @@
 
 ### Attributes
 
-| 属性名      | 说明                       |
-| ----------- | -------------------------- |
-| itableHtml  | 通过 v-html 绑定输入框内容 |
-| placeholder | 提示语                     |
-| height      | 输入框高度                 |
-| options     | @触发后提及的下拉数据      |
+| 属性名      | 说明                       | 类型                    |
+| ----------- | -------------------------- | ----------------------- |
+| itableHtml  | 通过 v-html 绑定输入框内容 | string                  |
+| placeholder | 提示语                     | string                  |
+| height      | 输入框高度                 | number                  |
+| options     | @触发后提及的下拉数据      | (value: string) => void |
 
 ### Event
 
