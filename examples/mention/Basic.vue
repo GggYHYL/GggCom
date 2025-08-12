@@ -4,7 +4,7 @@
     :itable-html="itableHtml"
     :options="options"
     @set-itable-html="getItableHtml"
-  />
+  ></Mention>
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
