@@ -70,8 +70,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "packages/index.ts"),
-      name: "MyComponentLibrary",
-      fileName: (format) => `my-component-library.${format}.js`,
+      name: "guanggUI",
+      fileName: (format) => `ggg-com.${format}.js`,
     },
     rollupOptions: {
       external: ["vue"],

@@ -1,11 +1,11 @@
 {
-  "name": "guangg-component-library",
+  "name": "ggg-com",
   "private": false,
-  "description": "mention组件开发完成",
+  "description": "库名修改成GggCom",
   "type": "module",
-  "version": "0.0.6",
-  "main": "dist/my-component-library.umd.js",
-  "module": "dist/my-component-library.es.js",
+  "version": "0.0.7",
+  "main": "dist/ggg-com.umd.js",
+  "module": "dist/ggg-com.es.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
