@@ -68,11 +68,10 @@ export default defineComponent({
     const optionsRef = ref<HTMLDivElement>();
     // 初始化绑定直
     const itableHtml = ref<string>("");
-    let newItableHtml: string = "";
     watch(
       () => props.itableHtml,
       (nVal) => {
-        itableHtml.value = newItableHtml = nVal;
+        itableHtml.value = nVal;
       },
       {
         immediate: true,
@@ -84,7 +83,6 @@ export default defineComponent({
       if (event.target.textContent.trim() === "") {
         event.target.innerHTML = "";
       }
-      newItableHtml = event.target.innerHTML; //  不要在这里直接设置 itableHtml.value.innerHTML = ... 这会重置光标
       if (event.data === "@") {
         setStyleDisplay(DisplayEnum.BLOCK);
         nextTick(() => setOptionsPos());
@@ -149,13 +147,12 @@ export default defineComponent({
       newRange.collapse(true);
       selection.removeAllRanges();
       selection.addRange(newRange);
-      newItableHtml = itableRef.value?.innerHTML ?? "";
     };
     // 失去焦点
     const onBlur = () => {
       setStyleDisplay();
-      itableHtml.value = newItableHtml;
-      emit("setItableHtml", newItableHtml);
+      itableHtml.value = itableRef.value?.innerHTML ?? "";
+      emit("setItableHtml", itableHtml.value);
     };
     return {
       itableRef,
