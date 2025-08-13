@@ -1,5 +1,5 @@
 <template>
-  <button :class="`button button--${type}`">
+  <button :class="`button--${type}`">
     <slot></slot>
   </button>
 </template>
@@ -20,6 +20,6 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import url(./index.scss);
 </style>

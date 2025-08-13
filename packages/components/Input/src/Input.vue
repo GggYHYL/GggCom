@@ -10,7 +10,7 @@ export default defineComponent({
     type: {
       type: String,
       default: "text",
-      validator: (val: string) => ["text", "textarea"].includes(val),
+      validator: (val: string) => ["text"].includes(val),
     },
     placeholder: {
       type: String,
