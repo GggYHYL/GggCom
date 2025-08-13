@@ -150,7 +150,13 @@ export default defineComponent({
     // 失去焦点
     const onBlur = () => {
       setStyleDisplay();
-      itableHtml.value = itableRef.value?.innerHTML ?? "";
+      itableHtml.value =
+        itableRef.value?.innerHTML
+          .replace(/&amp;/g, "&")
+          .replace(/&lt;/g, "<")
+          .replace(/&gt;/g, ">")
+          .replace(/&quot;/g, '"')
+          .replace(/&#039;/g, "'") ?? "";
       emit("setItableHtml", itableHtml.value);
     };
     return {
