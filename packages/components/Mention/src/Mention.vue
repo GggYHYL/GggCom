@@ -45,16 +45,10 @@ export default defineComponent({
       validator: (val: number) => typeof val === "number",
       default: 200,
     },
-    minHeight: {
-      type: Number,
-      validator: (val: number) => typeof val === "number",
-      default: 200,
-    },
     itableHtml: {
       type: String,
       required: true,
       validator: (val: string) => typeof val === "string",
-      default: "",
     },
     options: {
       type: Array as PropType<string[]>,
