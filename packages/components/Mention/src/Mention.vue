@@ -153,11 +153,12 @@ export default defineComponent({
       itableHtml.value =
         itableRef.value?.innerHTML
           .replace(/&amp;/g, "&")
+          .replace(/&nbsp;/g, " ")
           .replace(/&lt;/g, "<")
           .replace(/&gt;/g, ">")
           .replace(/&quot;/g, '"')
           .replace(/&#039;/g, "'")
-          .replace(/<br>/, "") ?? "";
+          .replace(/<br>/g, "") ?? "";
       emit("setItableHtml", itableHtml.value);
     };
     return {
