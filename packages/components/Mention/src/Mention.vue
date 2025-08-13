@@ -156,7 +156,8 @@ export default defineComponent({
           .replace(/&lt;/g, "<")
           .replace(/&gt;/g, ">")
           .replace(/&quot;/g, '"')
-          .replace(/&#039;/g, "'") ?? "";
+          .replace(/&#039;/g, "'")
+          .replace(/<br>/, "") ?? "";
       emit("setItableHtml", itableHtml.value);
     };
     return {
