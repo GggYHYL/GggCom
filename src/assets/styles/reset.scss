@@ -6,6 +6,9 @@ body,
   margin: 0;
   padding: 0;
 }
+img{
+  display: block;
+}
 /* 重置所有链接样式 */
 a {
   color: inherit;           /* 继承父元素颜色 */

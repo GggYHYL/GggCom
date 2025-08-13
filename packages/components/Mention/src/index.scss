@@ -5,6 +5,7 @@
         padding: 8px 16px;
         box-sizing: border-box;
         border-radius: $border-radius;
+        overflow-y: auto;
         &[contenteditable=false]{
             background-color: $disabled-color;
             color: $disabled-text-color;
