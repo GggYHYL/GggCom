@@ -1,9 +1,9 @@
 {
   "name": "ggg-com",
   "private": false,
-  "description": "库名修改成ggg-com",
+  "description": "文档增加404页面及mention组件特殊字符处理",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "dist/ggg-com.umd.js",
   "module": "dist/ggg-com.es.js",
   "types": "dist/index.d.ts",
