@@ -6,6 +6,7 @@
         box-sizing: border-box;
         border-radius: $border-radius;
         overflow-y: auto;
+        white-space: pre-wrap; // 保留原始换行符 不会被转义成 <br>
         &[contenteditable=false]{
             background-color: $disabled-color;
             color: $disabled-text-color;

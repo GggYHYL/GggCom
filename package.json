@@ -17,11 +17,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "he": "^1.2.0",
     "vue": "^3.3.8",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@highlightjs/vue-plugin": "^2.1.0",
+    "@types/he": "^1.2.3",
     "@types/node": "^24.1.0",
     "@vitejs/plugin-vue": "^4.5.0",
     "highlight.js": "^11.11.1",

@@ -21,6 +21,7 @@
 import { defineComponent, ref, PropType, watch, nextTick } from "vue";
 import { DisplayEnum } from "./enums";
 import { ContentEditableType } from "./types";
+import he from "he";
 export default defineComponent({
   name: "MyMention",
   props: {
@@ -150,15 +151,7 @@ export default defineComponent({
     // 失去焦点
     const onBlur = () => {
       setStyleDisplay();
-      itableHtml.value =
-        itableRef.value?.innerHTML
-          .replace(/&amp;/g, "&")
-          .replace(/&nbsp;/g, " ")
-          .replace(/&lt;/g, "<")
-          .replace(/&gt;/g, ">")
-          .replace(/&quot;/g, '"')
-          .replace(/&#039;/g, "'")
-          .replace(/<br>/g, "") ?? "";
+      itableHtml.value = he.decode(itableRef.value?.innerHTML ?? "");
       emit("setItableHtml", itableHtml.value);
     };
     return {
