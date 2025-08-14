@@ -16,3 +16,14 @@ declare module "/docs/*.md" {
   const Component: ComponentOptions;
   export default Component;
 }
+// he.js
+declare module "he" {
+  const he: {
+    encode: (text: string, options?: any) => string;
+    decode: (html: string, options?: any) => string;
+    escape: (text: string) => string;
+    unescape: (html: string) => string;
+    version: string;
+  };
+  export default he;
+}

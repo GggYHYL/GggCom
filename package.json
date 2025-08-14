@@ -1,9 +1,9 @@
 {
   "name": "ggg-com",
   "private": false,
-  "description": "文档增加404页面及mention组件特殊字符处理",
+  "description": "mention组件特殊字符处理",
   "type": "module",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "main": "dist/ggg-com.umd.js",
   "module": "dist/ggg-com.es.js",
   "types": "dist/index.d.ts",
@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "@highlightjs/vue-plugin": "^2.1.0",
-    "@types/he": "^1.2.3",
     "@types/node": "^24.1.0",
     "@vitejs/plugin-vue": "^4.5.0",
     "highlight.js": "^11.11.1",
