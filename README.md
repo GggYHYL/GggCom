@@ -1,6 +1,6 @@
 ## ggg-com
 
-持续更新组件
+持续更新组件及文档，github 地址：https://github.com/GggYHYL/ggg-com
 
 ## Installing
 
@@ -23,7 +23,3 @@ Using pnpm:
 ```bash
 $ pnpm add ggg-com
 ```
-
-## github 地址
-
-https://github.com/GggYHYL/ggg-com
